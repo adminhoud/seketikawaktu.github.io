@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+body {
+    background-color: burlywood;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: #E2A465;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: brown;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Homepage</a>
+      </div>
+<br>
+<br>
+
+<h1><u>Order with us :)</u></h1>
+<p>Ello! :).</p>
+<form>
+    <form action="process.php"method="get">
+        <a name="form"></a>
+            <fieldset>
+            <legend>Order Form</legend>
+        Name: <input type="text"> <br><br>
+        
+        Type Coffee: 
+        <input type="checkbox">Espresso
+        <input type="checkbox">Latte
+        <input type="checkbox">Americano
+        <input type="checkbox">Cappucino<br><br>
+        
+        Hot/Cold: <select name="hotcold" id="hotcold">
+        <option value="hot">Hot</option>
+        <option value="cold">Cold</option>
+        </select><br><br>
+        
+        Quantity: <select name="quantity" id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        </select><br><br>
+        
+        Date Order: <input type="date"><br><br>
+        
+        Time Order: <input type="time"><br><br>
+        
+        Email: <input type="text"><br><br>
+        
+        </fieldset><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+</form>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hud.css">   
+
+<title>Seketika Waktu</title>
+<style>
+
+body {
+    background-color: burlywood;
+    font-family: "Lato", sans-serif;
+} 
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Espresso {background-color:grey;}
+#Latte {background-color:grey;}
+#Americano {background-color:grey;}
+#Cappucino {background-color:grey;}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url('latte-art.png');
+    min-height: 75%;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 50%;
+    height: 40px;
+    background-image: url("leaf.png");
+}
+
+h3{
+    font-size: 42px; text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+</style>
+</head>
+<body>
+  <a name="home"></a>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#form">Form</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+      <button id="myBtn" class="dropbtn">Menus</button>
+    <div id="myDropdown" class="dropdown-content">
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="aboutus.html">About us</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+  </div>
+    <p>Click on the buttons inside the tabbed menu to know about coffee:</p>
+
+<div id="Espresso" class="tabcontent">
+  <h1>إسبرسو</h1>
+  <p>Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine. However, because espresso is typically served in smaller servings than coffee, it has less caffeine per serving.</p>
+</div>
+
+<div id="Latte" class="tabcontent">
+  <h1>لاتيه</h1>
+  <p>A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink. A true latte will be made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top. These elements combined result in a balanced milky coffee that possesses an aesthetically pleasing look and a smooth texture.</p> 
+</div>
+
+<div id="Americano" class="tabcontent">
+  <h1>أمريكانو</h1>
+  <p>A caffè Americano is espresso topped with hot water, and it can be made in several different ways.</p>
+</div>
+
+<div id="Cappucino" class="tabcontent">
+  <h1>كابتشينو</h1>
+  <p>A cappuccino is the perfect balance of espresso, steamed milk and foam. This coffee is all about the structure and the even splitting of all elements into equal thirds. An expertly made cappuccino should be rich, but not acidic and have a mildly sweet flavouring from the milk. And, because the milk is not actually mixed in it gives the espresso a stronger flavour.</p>
+</div>
+
+<button class="tablink" onclick="CoffeeType('Espresso', this, '#E1C16E')" id="defaultOpen">Espresso</button>
+<button class="tablink" onclick="CoffeeType('Latte', this, 'brown')">Latte</button>
+<button class="tablink" onclick="CoffeeType('Americano', this, '#DAA06D')">Americano</button>
+<button class="tablink" onclick="CoffeeType('Cappucino', this, '#C19A6B')">Cappucino</button>
+
+<br>
+<h1>Kafe Seketika Waktu</h1>
+<audio controls autoplay>
+    <source src="Dengan Nama Tuhan - Teman Lelaki (Official MV).mp3" type="audio/mpeg">    
+</audio>    
+
+
+<marquee>"Destinasi Tenang Buat Diri Dan Sahabat ديستيناسي تنڠ بوات ديري دان صحابة"</marquee>
+<!--hyperlink-->
+
+<p style="background-image: url('latte.jpg');">
+    <br>
+    Malam sunyi bertemankan secangkir kopi<br>
+    Sulit pejamkan mata dikala rindu melanda<br>
+    Hingga ku tak bisa bedakan sekaran ini<br>
+    Apakah candu akan rindu,<br>
+    Atau pada kafein yang terus kuteguk.<br>
+    <br>
+    Seperti itulah kisah malam-malamku<br>
+    Hening terisi oleh jiwa yang merindu<br>
+    Hingga tak terasa tiga gelas kopi sudah ku libas<br>
+    Mungkin ini saatnya ku berpisah dengannya<br>
+    <br>
+    Maafkan aku kopi hitam pahitku<br>
+    Aku tak biasa lagi menemanimu hingga pagi<br>
+    Mataku sudah kantuk ingin memulai hari<br>
+    Agar besok bisa bertemu dengan sang kekasih hati<br>
+</p> 
+<a href="https://en.wikipedia.org/wiki/Coffee/">Want to know about coffee?</a>
+<a name="menu"></a>
+<b>
+        <fieldset>
+          <legend><h3>سناراي هرڬ كوڤي</h3>
+        <table class="center">
+            <tbody><tr>
+                <th>كوڤي</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Espresso</td>
+                <td>RM5</td>
+            </tr>
+            <tr>
+                <td>Cappucino</td>
+                <td>RM3</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>RM8</td>
+            </tr>
+            <tr>
+                <td>Americano</td>
+                <td>RM7</td>
+            </tr>
+            </tbody></table> </b></legend>
+        <br>
+        <p2><b>Ikut harga yang telah termaktub sahaja:</b> <i>Please refer the following <u>menu</u>
+        <br>
+        <p3>Kopi yang telah dibeli tidak boleh dipulangkan semula</p3>
+        <br>
+    </fieldset>
+    
+<br>
+<br>
+</b>
+<form action="process.php"method="get">
+<a name="form"></a>
+    <fieldset>
+      <br>
+    <legend><b>Order Form<br></legend>
+Name: <input type="text"> <br><br>
+
+Type Coffee: 
+<input type="checkbox">Espresso
+<input type="checkbox">Latte
+<input type="checkbox">Americano
+<input type="checkbox">Cappucino<br><br>
+
+Hot/Cold: <select name="hotcold" id="hotcold">
+<option value="hot">Hot</option>
+<option value="cold">Cold</option>
+</select><br><br>
+
+Quantity: <select name="quantity" id="quantity">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select><br><br>
+
+Date Order: <input type="date"><br><br>
+
+Time Order: <input type="time"><br><br>
+
+Email: <input type="text"><br><br>
+
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<br>
+<br>
+<br>
+</fieldset>
+<a name="about"></a>
+<br>
+<fieldset>
+<h6>About Us</h6> 
+<p5>Seketika Waktu owns two locations in Kemaman, Terengganu (both loved by the people of Kemaman).<br>
+  We serve inventive coffee drinks.
+  This café website nails the vibe quotient a coffee shop website demands. <br>
+  It does so by showcasing natural pictures of their coffee, the people making it,
+  and the people enjoying it with friends.<br>The beige background color just adds to it.</p5>
+<br>
+</fieldset>
+  <br>
+  <br>
+  <br>
+  <a name="contact"></a>
+  <h7><u>Contact</u></h7>
+  <br>
+  <p6>Nur Ahmad Ikmal Bin Azman<br>
+    &nbsp&nbsp&nbsp&nbspContact Number: 999<br>
+    &nbsp&nbsp&nbsp&nbspInstagram: @ikmlazman</p6>
+  <br>
+  <br>
+  <div class="bottomnov">
+    <a class="active" href="#home">Back To HomePage</a>
+  </div>
+
+</form>
+<br>
+
+<br>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/gdbgxC2JfyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script>
+    function CoffeeType(coffeeName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(coffeeName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+   
+</script>
+</body>
+</html>
+<!--NUR AHMAD IKMAL BIN AZMAN_2022782953_RCS2512A-->
